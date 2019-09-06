@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Favourite Song List</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+
+            <div class="form-item">
+                <label for="song" class="primary">Song</label>
+                <input type="text" id="song" required />
+            </div>
+
+            <div class="form-item">
+                <label for="artist" class="primary">Artist</label>
+                <input type="text" id="artist" required />
+            </div>
+
+            <div class="form-item">
+                <label for="genre" class="primary">Genre</label>
+                <select id="category">
+                    <option value="Select the genre" disabled selected></option>
+                    <option value="Pop">Pop</option>
+                    <option value="Country">Country</option>
+                    <option value="Blues">Blues</option>
+                    <option value="RnB">RnB</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Heavy Metal">Heavy Metal</option>
+                    <option value="Rap">Rap</option>
+                    <option value="Dance">Dance</option>
+                </select>
+            </div>
+
+        </div>
+        <input type="submit" value="save" />
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>List of your favourite songs</h1>
+    <ul id="song-list"></ul>
+</body>
+
+</html>
