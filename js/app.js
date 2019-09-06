@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const deleteAllButton = document.querySelector('#delete-all');
     deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
+    const songListEffect = document.querySelector('#song-list');
+    songListEffect.addEventListener("mouseover", function(event) {
+        event.target.style.color = "purple";
+        setTimeout(function() {
+            event.target.style.color = "";
+        }, 500);
+    }, false);
 })
 
     const handleNewItemFormSubmit = function (event) {
@@ -29,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         songListItem.appendChild(artist);
         
         const genre = document.createElement('h4');
-        newFunction(genre);
         genre.textContent = form.genre.value;
         songListItem.appendChild(genre);
         
@@ -40,7 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const songList = document.querySelector('#song-list');
         songList.innerHTML = '';
     }
-
-function newFunction(genre) {
-    console.log(genre);
-}
+      
