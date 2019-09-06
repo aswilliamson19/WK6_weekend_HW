@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const artist = document.createElement('h3');
         artist.textContent = form.artist.value;
         songListItem.appendChild(artist);
-
+        
         const genre = document.createElement('h4');
+        newFunction(genre);
         genre.textContent = form.genre.value;
         songListItem.appendChild(genre);
         
@@ -39,3 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const songList = document.querySelector('#song-list');
         songList.innerHTML = '';
     }
+
+function newFunction(genre) {
+    console.log(genre);
+}
