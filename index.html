@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>Favourite Song List</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
     <script src="js/app.js"></script>
 </head>
 
 <body>
-    <h1>Your favourite songs</h1>
+    <h1>🎵 Songs List 🎵</h1>
     <form id="new-item-form">
         <div id="form-wrapper">
 
@@ -37,7 +38,12 @@
                     <option value="Dance">Dance</option>
                 </select>
             </div>
-
+            <div class="form-item">
+                 <input id="radio-button" name="button" type="radio" value="Overplayed"></input>
+                 <label for="overplayed">Overplayed</label>
+                 <input id="radio-button" name="button" type="radio" value="Loving this tune!"></input>
+                <label for="loving-this-tune">Loving this tune!</label>
+            </div>
         </div>
         <input type="submit" value="Save" />
     </form>

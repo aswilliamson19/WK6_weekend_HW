@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     const newItemForm = document.querySelector('#new-item-form');
     newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.target.style.color = "";
         }, 500);
     }, false);
+    
 })
 
     const handleNewItemFormSubmit = function (event) {
@@ -39,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const genre = document.createElement('h4');
         genre.textContent = form.genre.value;
         songListItem.appendChild(genre);
+
+        const button = document.createElement('h4');
+        button.textContent = form.button.value;
+        songListItem.appendChild(button);
         
         return songListItem;
     }
@@ -47,4 +53,3 @@ document.addEventListener('DOMContentLoaded', () => {
         const songList = document.querySelector('#song-list');
         songList.innerHTML = '';
     }
-      
