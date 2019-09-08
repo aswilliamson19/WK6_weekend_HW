@@ -1,5 +1,39 @@
 body {
   font-family: 'Livvic', sans-serif;
-
+  font-weight: 800;
+  background-image: url('../public/background-image.jpg');
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
 }
 
+h1 {
+  text-align: center;
+}
+
+#form-wrapper {
+  display: inline;
+  text-align: left;
+  margin-right: 5px;
+}
+
+#new-item-form {
+  display: inline;
+  justify-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li.song-list-item {
+  background-color: whitesmoke;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+}

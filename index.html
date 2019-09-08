@@ -10,22 +10,22 @@
 </head>
 
 <body>
-    <h1>🎵 Songs List 🎵</h1>
+    <h1>🎵 Song List 🎵</h1>
     <form id="new-item-form">
         <div id="form-wrapper">
 
             <div class="form-item">
-                <label for="song" class="primary">Song</label>
+                <label for="song" class="primary">Song: </label>
                 <input type="text" id="song" required />
             </div>
 
             <div class="form-item">
-                <label for="artist" class="primary">Artist</label>
+                <label for="artist" class="primary">Artist: </label>
                 <input type="text" id="artist" required />
             </div>
 
             <div class="form-item">
-                <label for="genre" class="primary">Genre</label>
+                <label for="genre" class="primary">Genre: </label>
                 <select id="genre">
                     <option value="Select the genre" disabled selected></option>
                     <option value="Pop">Pop</option>
@@ -40,17 +40,16 @@
             </div>
             <div class="form-item">
                  <input id="radio-button" name="button" type="radio" value="Overplayed"></input>
-                 <label for="overplayed">Overplayed</label>
+                 <label for="overplayed">Overplayed! 🤪 </label>
                  <input id="radio-button" name="button" type="radio" value="Loving this tune!"></input>
-                <label for="loving-this-tune">Loving this tune!</label>
+                <label for="loving-this-tune">Loving this tune! ❤️ </label>
             </div>
         </div>
         <input type="submit" value="Save" />
     </form>
 
     <button id="delete-all">Delete All</button>
-
-    <ul id="song-list"></ul>
+    <ul class="flex-item" id="song-list"></ul>
 </body>
 
 </html>

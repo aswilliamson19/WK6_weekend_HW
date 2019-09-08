@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const songListEffect = document.querySelector('#song-list');
     songListEffect.addEventListener("mouseover", function(event) {
-        event.target.style.color = "purple";
+        event.target.style.color = "red";
         setTimeout(function() {
             event.target.style.color = "";
         }, 500);
     }, false);
-    
+
 })
 
     const handleNewItemFormSubmit = function (event) {
